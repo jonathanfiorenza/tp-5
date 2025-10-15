@@ -48,6 +48,69 @@
       </nav>
     </header>
     <main class="container">
+     <section>
+<div class="container">
+    <h1 class="mb-4 text-primary">👤 Creador de Persona</h1>
+    <p class="mb-4">Ingresa los datos para crear una nueva persona y probar sus métodos.</p>
+
+    <form id="formularioPersona" class="p-4 border rounded shadow-sm">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="col-md-6">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="edad" min="0" required>
+            </div>
+            <div class="col-md-6">
+                <label for="dni" class="form-label">DNI</label>
+                <input type="text" class="form-control" id="dni" required>
+            </div>
+            <div class="col-md-6">
+                <label for="sexo" class="form-label">Sexo</label>
+                <select class="form-select" id="sexo" required>
+                    <option value="" disabled selected>Seleccione</option>
+                    <option value="H">H (Hombre)</option>
+                    <option value="M">M (Mujer)</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="peso" class="form-label">Peso (kg)</label>
+                <input type="number" class="form-control" id="peso" step="0.1" min="1" required>
+            </div>
+            <div class="col-md-4">
+                <label for="altura" class="form-label">Altura (m)</label>
+                <input type="number" class="form-control" id="altura" step="0.01" min="0.5" required>
+            </div>
+            <div class="col-md-4">
+                <label for="nacimiento" class="form-label">Año de Nacimiento</label>
+                <input type="number" class="form-control" id="nacimiento" min="1900" max="2025" required>
+            </div>
+        </div>
+
+        <div class="mt-4 text-center">
+            <button type="submit" class="btn btn-success me-2">Crear Persona</button>
+            <button type="button" class="btn btn-secondary" onclick="document.getElementById('formularioPersona').reset()">Limpiar</button>
+        </div>
+    </form>
+
+    <div id="controlesPersona" class="mt-4 p-4 border rounded bg-light d-none">
+        <h3 class="mb-3">Métodos del Objeto</h3>
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-info" id="btnGeneracion">Mostrar Generación</button>
+            <button class="btn btn-warning" id="btnMayorEdad">¿Es Mayor de Edad?</button>
+            <button class="btn btn-dark" id="btnMostrarDatos">Mostrar Todos los Datos</button>
+        </div>
+        <div id="datosPersona" class="mt-3 p-3 bg-white border rounded">
+            <p>Objeto creado. Haz clic en 'Mostrar Todos los Datos'.</p>
+        </div>
+    </div>
+</div>
+
+
+
+</section> 
    
     </main>
     <footer class="text-center py-3 bg-secondary-subtle">
@@ -58,6 +121,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/01.js"></script>
+    <script src="../js/02.js"></script>
   </body>
 </html>
