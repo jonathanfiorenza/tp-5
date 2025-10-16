@@ -40,7 +40,7 @@
     class="collapse navbar-collapse justify-content-end"
     id="navbarSupportedContent"
 >
-    <a href="../index.html" class="btn btn-outline-warning">
+    <a href="../index.html" class="btn btn-warning">
         Volver a inicio
     </a>
 </div>
@@ -48,6 +48,30 @@
       </nav>
     </header>
     <main class="container">
+
+
+      <section>
+        <div class="temporizador-container text-center">
+            <h1>Temporizador Regresivo</h1>
+
+            <div class="entrada-tiempo">
+                <input type="number" id="inputMinutos" placeholder="Min" min="0" max="59" value="0">
+                <input type="number" id="inputSegundos" placeholder="Seg" min="0" max="59" value="0">
+            </div>
+            
+            <div class="display">
+                <p id="pMinutos" class="tiempo">00</p><span class="separador">:</span>
+                <p id="pSegundos" class="tiempo">00</p><span class="separador">.</span>
+                <p id="pCentesimas" class="tiempo centesimas">00</p>
+            </div>
+            
+            <div class="controles">
+                <button id="btnIniciar" class="btn iniciar">Iniciar</button>
+                <button id="btnPausar" class="btn pausar">Pausar</button>
+                <button id="btnReset" class="btn reset">Reiniciar</button>
+            </div>
+        </div>
+    </section>
      
     </main>
     <footer class="text-center py-3 bg-secondary-subtle">
@@ -58,6 +82,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/app.js"></script>
+    <script src="../js/06.js"></script>
   </body>
 </html>
