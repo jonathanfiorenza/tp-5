@@ -72,3 +72,81 @@ main {
 	font-size: 2rem;
 	display: block;
 }
+
+
+/*ejercicio 5*/
+      .cronometro-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+/* Estilo del Display del Tiempo */
+.display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    user-select: none; /* Evita selección del texto */
+}
+
+.tiempo {
+    display: inline-block; /* O 'inline' */
+}
+
+
+.separador {
+    color: #bdc3c7;
+    margin: 0 5px;
+}
+
+.centesimas {
+    font-size: 3rem;
+    color: #e74c3c;
+}
+
+/* Estilo de los Botones */
+.controles {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    font-weight: bold;
+}
+
+.btn.iniciar {
+    background-color: #2ecc71;
+}
+
+.btn.iniciar:hover {
+    background-color: #27ae60;
+}
+
+.btn.pausar {
+    background-color: #f39c12;
+}
+
+.btn.pausar:hover {
+    background-color: #d35400;
+}
+
+.btn.reset {
+    background-color: #e74c3c;
+}
+
+.btn.reset:hover {
+    background-color: #c0392b;
+}
