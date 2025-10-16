@@ -25,4 +25,50 @@ main {
 
 
 
-/*ejercicio 1*/
+/*ejercicio 4*/
+
+.wrap {
+	width: 90%;
+	max-width: 1000px;
+	/*margin:auto;*/
+}
+
+.widget {
+	width: 50%;
+	
+	margin: 150px 400px; 
+}
+
+.widget p {
+	display: inline-block;
+	line-height: 1em;
+}
+
+.fecha {
+	font-family: fantasy;
+	text-align: center;
+	font-size:1.5em;
+	margin-bottom: 5px;
+	background: rgba(63, 211, 88, 0.74);
+	padding: 20px;
+	width: 100%;
+}
+
+.reloj {
+	font-family: fantasy;
+	width: 100%;
+	padding: 20px;
+	font-size: 4em;
+	text-align: center;
+	background: rgba(69, 5, 247, 0.5);
+}
+
+.reloj .caja-segundos {
+	display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+	font-size: 2rem;
+	display: block;
+}
