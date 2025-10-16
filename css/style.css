@@ -28,51 +28,72 @@ main {
 /*ejercicio 4*/
 
 .wrap {
-	width: 90%;
-	max-width: 1000px;
-	/*margin:auto;*/
+    width: 90%;
+    max-width: 1000px;
+    /* Centrar el wrap dentro del body/main */
+    margin: 0 auto; 
+    padding: 0 15px; /* Evita que el contenido toque los bordes en móviles */
 }
 
 .widget {
-	width: 50%;
-	
-	margin: 150px 400px; 
+    /* Ocupa el 100% del ancho del 'wrap' */
+    width: 100%; 
+    /* Centra el widget horizontalmente. El 150px es el margen superior/inferior. */
+    margin: 150px auto; 
+    max-width: 500px; /* Limita el ancho máximo para que no se vea ridículo en pantallas gigantes */
 }
 
 .widget p {
-	display: inline-block;
-	line-height: 1em;
+    display: inline-block;
+    line-height: 1em;
 }
 
 .fecha {
-	font-family: fantasy;
-	text-align: center;
-	font-size:1.5em;
-	margin-bottom: 5px;
-	background: rgba(63, 211, 88, 0.74);
-	padding: 20px;
-	width: 100%;
+    font-family: fantasy;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    background: rgba(63, 211, 88, 0.74);
+    padding: 20px;
+    width: 100%;
 }
 
 .reloj {
-	font-family: fantasy;
-	width: 100%;
-	padding: 20px;
-	font-size: 4em;
-	text-align: center;
-	background: rgba(69, 5, 247, 0.5);
+    font-family: fantasy;
+    width: 100%;
+    padding: 20px;
+    /* Fuente grande para escritorio */
+    font-size: 4em; 
+    text-align: center;
+    background: rgba(69, 5, 247, 0.5);
 }
 
 .reloj .caja-segundos {
-	display: inline-block;
+    display: inline-block;
 }
 
 .reloj .segundos,
 .reloj .ampm {
-	font-size: 2rem;
-	display: block;
+    font-size: 2rem;
+    display: block;
 }
 
+/* Media Query para hacer la fuente más pequeña en móviles (hasta 576px) */
+@media (max-width: 576px) {
+    .reloj {
+        font-size: 3em; /* Reducimos la fuente para que quepa mejor */
+        padding: 15px;
+    }
+    
+    .fecha {
+        font-size: 1.2em; /* Reducimos la fuente de la fecha también */
+        padding: 15px;
+    }
+    
+    .widget {
+        margin: 50px auto; /* Reducimos el margen superior en móviles */
+    }
+}
 
 /*ejercicio 5*/
       .cronometro-container {
